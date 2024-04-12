@@ -1,0 +1,6 @@
+dependencies:
+  idf:
+    version: '>=5.0'
+targets:
+- esp32s2
+- esp32s3

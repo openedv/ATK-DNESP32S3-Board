@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "myiic.h": "c",
+        "stdlib.h": "c",
+        "ap3216c.h": "c"
+    }
+}

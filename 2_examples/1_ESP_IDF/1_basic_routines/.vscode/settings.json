@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "ap3216c.h": "c",
+        "xl9555.h": "c",
+        "camera.h": "c",
+        "stdio.h": "c",
+        "oled.h": "c",
+        "string.h": "c",
+        "esp_rtc.h": "c",
+        "led.h": "c",
+        "gt9xxx.h": "c",
+        "touch.h": "c",
+        "exfuns.h": "c",
+        "convert.h": "c",
+        "stdlib.h": "c",
+        "piclib.h": "c",
+        "qma6100p.h": "c",
+        "fonts.h": "c",
+        "avi.h": "c",
+        "esp_camera.h": "c"
+    },
+    "cmake.sourceDirectory": "C:/Users/YUAN/Desktop/basic_routines/00_Basic_project"
+}

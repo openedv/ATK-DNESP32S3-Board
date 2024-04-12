@@ -1,0 +1,39 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "idf.adapterTargetName": "esp32s3",
+  "files.associations": {
+    "gpio.h": "c",
+    "led.h": "c",
+    "task.h": "c",
+    "bsp_lcd.h": "c",
+    "string.h": "c",
+    "esp_lcd_panel_ops.h": "c",
+    "bsp_i2c.h": "c",
+    "camera.h": "c",
+    "array": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "esp_face_detection.h": "c",
+    "esp_face_detection.hpp": "c",
+    "lcd.h": "c",
+    "human_face_detect_msr01.hpp": "c",
+    "dl_image.hpp": "c",
+    "vector": "c",
+    "dl_math_matrix.hpp": "c",
+    "esp_log.h": "c",
+    "bitset": "c",
+    "initializer_list": "c",
+    "regex": "c",
+    "utility": "c",
+    "iic.h": "c",
+    "freertos.h": "c",
+    "spi.h": "c",
+    "freertos_demo.h": "c",
+    "queue.h": "c"
+},
+"idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+],
+"idf.flashType": "UART",
+"idf.portWin": "COM4"
+}

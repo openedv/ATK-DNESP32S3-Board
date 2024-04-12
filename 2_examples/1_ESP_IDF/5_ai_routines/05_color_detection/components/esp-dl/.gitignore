@@ -1,0 +1,9 @@
+.vscode/
+build/
+sdkconfig.old
+sdkconfig
+bin/
+.idea/
+__pycache__/
+mnist_calib.pickle
+mnist_model_example_optimized.onnx

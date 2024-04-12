@@ -1,0 +1,4 @@
+SENSOR_MOD_DIR := $(USERMOD_DIR)
+SRC_USERMOD_C += $(EXAMPLE_MOD_DIR)/sensor.c
+
+

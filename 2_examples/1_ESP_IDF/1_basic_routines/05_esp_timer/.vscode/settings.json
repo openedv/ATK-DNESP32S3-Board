@@ -1,0 +1,18 @@
+{
+"C_Cpp.intelliSenseEngine": "Tag Parser",
+"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+"idf.adapterTargetName": "esp32s3",
+"idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+],
+"idf.portWin": "COM27",
+"idf.flashType": "UART",
+"files.associations": {
+    "key.h": "c",
+    "led.h": "c",
+    "freertos.h": "c",
+    "btim.h": "c",
+    "esptim.h": "c",
+    "esp_timer.h": "c"
+}
+}

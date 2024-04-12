@@ -1,0 +1,20 @@
+{
+"C_Cpp.intelliSenseEngine": "Tag Parser",
+"idf.adapterTargetName": "esp32s3",
+"files.associations": {
+    "gpio.h": "c",
+    "led.h": "c",
+    "task.h": "c",
+    "bsp_lcd.h": "c",
+    "string.h": "c",
+    "esp_lcd_panel_ops.h": "c",
+    "bsp_i2c.h": "c",
+    "sensor.h": "c",
+    "esp_err.h": "c"
+},
+"idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+],
+"idf.flashType": "UART",
+"idf.portWin": "COM25"
+}
