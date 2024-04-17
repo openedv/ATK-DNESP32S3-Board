@@ -27,7 +27,7 @@ import time
 """
 class REMOTE_IR(object):
 
-    # define key value
+    # Define key value
     REMOTE_CODE = {
         0: "ERROR", 162: "POWER", 98: "UP",
         2: "PLAY", 226: "ALIENTEK", 194: "RIGHT",
@@ -39,8 +39,11 @@ class REMOTE_IR(object):
     }
 
     def __init__(self, gpio_num):
+        # Initialize IR receiver pin with specified GPIO number and mode
         self.irRecv = Pin(gpio_num, Pin.IN, Pin.PULL_UP)
-        self.irRecv.irq(trigger = Pin.IRQ_RISING | Pin.IRQ_FALLING, handler = self.ex_handler)
+        # Set up interrupt handler for rising and falling edges
+        self.irRecv.irq(trigger=Pin.IRQ_RISING | Pin.IRQ_FALLING, handler=self.ex_handler)
+        # Initialize variables
         self.ir_step = 0
         self.ir_count = 0
         self.rx_buf = [0 for i in range(64)]
@@ -51,15 +54,13 @@ class REMOTE_IR(object):
         self.start = 0
         self.start_last = 0
 
-    # interrupt service function
+    # Interrupt service function
     def ex_handler(self, source):
-
         thisComeInTime = time.ticks_us()
 
-        # update time
+        # Update time
         curtime = time.ticks_diff(thisComeInTime, self.start)
         self.start = thisComeInTime
-        
 
         if curtime >= 8500 and curtime <= 9500:
             self.ir_step = 1
@@ -86,7 +87,7 @@ class REMOTE_IR(object):
             if curtime >= 500 and curtime <= 650:
                 self.repeat += 1
 
-    # detection command
+    # Detection command
     def check_cmd(self):
         one_byte = 0
         for i in range(32):
@@ -97,11 +98,11 @@ class REMOTE_IR(object):
                 one_byte += 1
         cmd_data = (one_byte & 0x0000ff00) >> 8
         self.cmd = cmd_data
-    # infrared decoding
+
+    # Infrared decoding
     def remote_scan(self):
         if self.rx_ok:
             self.check_cmd()
             self.rx_ok = False
         s = self.REMOTE_CODE.get(self.cmd)
-        return self.cmd,s
-
+        return self.cmd, s

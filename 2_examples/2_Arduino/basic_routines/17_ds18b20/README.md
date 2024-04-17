@@ -53,4 +53,4 @@ The place position of the ds18b20 in the development board is shown as follows:
 
 After normal operation, the LCD displays the temperature data collected by the DS18B20 temperature sensor.
 
-![]()
+![](../../../../1_docs/3_figures/examples/one_wire/ds18b20_phe.png)

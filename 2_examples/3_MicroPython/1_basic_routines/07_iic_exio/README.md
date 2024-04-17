@@ -30,5 +30,3 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 #### 3.2 Phenomenon
 
 After normal operation, press KEY0 and KEY1 on the development board to control buzzer work, press KEY2 and KEY3 to control LED light off.
-
-![]()

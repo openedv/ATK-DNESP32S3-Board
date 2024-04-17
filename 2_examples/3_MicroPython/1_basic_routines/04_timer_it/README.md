@@ -21,4 +21,3 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 #### 3.2 Phenomenon
 
 After normal operation, the red LED will blink periodically.
-

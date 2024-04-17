@@ -36,4 +36,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 After normal operation, the spilcd module will display time and date information.
 
-![]()
+![](../../../../1_docs/3_figures/examples/rtc/spilcd_phenomenon_mpy.png)

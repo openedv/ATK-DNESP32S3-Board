@@ -32,47 +32,51 @@ from machine import Pin,SPI,I2C
 """
 if __name__ == '__main__':
     
-    i2c0 = I2C(0, scl = Pin(42), sda = Pin(41), freq = 400000)
+    # Initialize I2C communication with specified pins and frequency
+    i2c0 = I2C(0, scl=Pin(42), sda=Pin(41), freq=400000)
+    # Initialize XL9555 IO expansion module
     xl9555 = io_ex.init(i2c0)
-    xl9555.write_bit(io_ex.BEEP,1)
+    # Turn on the beep
+    xl9555.write_bit(io_ex.BEEP, 1)
     
-    # reset camera
-    xl9555.write_bit(io_ex.OV_RESET,0)
+    # Reset camera
+    xl9555.write_bit(io_ex.OV_RESET, 0)
     time.sleep_ms(100)
-    xl9555.write_bit(io_ex.OV_RESET,1)
+    xl9555.write_bit(io_ex.OV_RESET, 1)
     time.sleep_ms(100)
-    # open camera
-    xl9555.write_bit(io_ex.OV_PWDN,1)
+    # Open camera
+    xl9555.write_bit(io_ex.OV_PWDN, 1)
     time.sleep_ms(100)
-    xl9555.write_bit(io_ex.OV_PWDN,0)
-    time.sleep_ms(100)
-    # sleep for 1000 milliseconds
+    xl9555.write_bit(io_ex.OV_PWDN, 0)
     time.sleep_ms(1000)
     
+    # Retry camera initialization up to 5 times
     for i in range(5):
-        cam = camera.init(0, format=camera.RGB565, fb_location=camera.PSRAM,framesize = camera.FRAME_240X240,xclk_freq = 24000000)
+        cam = camera.init(0, format=camera.RGB565, fb_location=camera.PSRAM, framesize=camera.FRAME_240X240, xclk_freq=24000000)
         print("Camera ready?: ", cam)
         if cam:
             print("Camera ready")
             break
         else:
             camera.deinit()
-            camera.init(0, format=camera.RGB565, fb_location=camera.PSRAM,framesize = camera.FRAME_240X240,xclk_freq = 24000000)
+            camera.init(0, format=camera.RGB565, fb_location=camera.PSRAM, framesize=camera.FRAME_240X240, xclk_freq=24000000)
             time.sleep(2)
     else:
         print('Timeout')
         reset()
     
-    # reset lcd
-    xl9555.write_bit(io_ex.SLCD_RST,0)
+    # Reset LCD
+    xl9555.write_bit(io_ex.SLCD_RST, 0)
     time.sleep_ms(100)
-    xl9555.write_bit(io_ex.SLCD_RST,1)
+    xl9555.write_bit(io_ex.SLCD_RST, 1)
     time.sleep_ms(100)
     
-    spi = SPI(2,baudrate = 80000000, sck = Pin(12), mosi = Pin(11), miso = Pin(13))
-    display = lcd.init(spi,dc = Pin(40,Pin.OUT,Pin.PULL_UP,value = 1),cs = Pin(21,Pin.OUT,Pin.PULL_UP,value = 1),dir = 1,lcd = 0)
-    # turn on the backlight
-    xl9555.write_bit(io_ex.SLCD_PWR,1)
+    # Initialize SPI communication with specified parameters and pins
+    spi = SPI(2, baudrate=80000000, sck=Pin(12), mosi=Pin(11), miso=Pin(13))
+    # Initialize LCD display
+    display = lcd.init(spi, dc=Pin(40, Pin.OUT, Pin.PULL_UP, value=1), cs=Pin(21, Pin.OUT, Pin.PULL_UP, value=1), dir=1, lcd=0)
+    # Turn on the backlight
+    xl9555.write_bit(io_ex.SLCD_PWR, 1)
     time.sleep_ms(100)
-    display.camera(42,5)
-
+    # Display camera feed on LCD
+    display.camera(42, 5)

@@ -56,4 +56,4 @@ The position of the qma6100p in the development board is shown as follows:
 
 After normal operation, the LCD displays the pitch and roll data of the three-axis acceleration sensor.
 
-![]()
+![](../../../../1_docs/3_figures/examples/iic/qma6100p_phe.png)

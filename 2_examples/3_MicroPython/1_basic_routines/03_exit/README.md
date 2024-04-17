@@ -22,6 +22,3 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 #### 3.2 Phenomenon
 
 After normal operation, press the BOOT key to trigger an external interrupt, and the LED indicator status changes from on to off, or from off to on.
-
-![]()
-

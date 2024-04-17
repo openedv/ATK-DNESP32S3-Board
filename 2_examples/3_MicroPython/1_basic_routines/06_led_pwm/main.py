@@ -28,17 +28,23 @@ import time
  * @retval      None
 """
 if __name__ == '__main__':
-    
-    # construct pwm object, with led on pin(1).
-    pwm = PWM(Pin(1),freq = 1000)
-    
+    # This block is executed if the script is run as the main program.
+
+    # Construct a PWM (Pulse Width Modulation) object with an LED connected to pin 1.
+    pwm = PWM(Pin(1), freq=1000)
+
     while True:
-        
-        # fade the led in and out a few times.
-        for i in range(0,1024):
-            pwm.duty(i)
-            time.sleep_ms(1)
-            
-        for i in range(1023,0,-1):
-            pwm.duty(i)
-            time.sleep_ms(1)
+        # This loop runs indefinitely.
+
+        # Fade the LED in and out a few times.
+
+        # Increase the duty cycle gradually from 0 to 1023.
+        for i in range(0, 1024):
+            pwm.duty(i)  # Set the duty cycle of the PWM signal.
+            time.sleep_ms(1)  # Sleep for 1 millisecond.
+
+        # Decrease the duty cycle gradually from 1023 to 0.
+        for i in range(1023, 0, -1):
+            pwm.duty(i)  # Set the duty cycle of the PWM signal.
+            time.sleep_ms(1)  # Sleep for 1 millisecond.
+

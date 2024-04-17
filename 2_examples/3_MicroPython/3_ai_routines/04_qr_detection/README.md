@@ -55,3 +55,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 Once the QR code is successfully detected, a blue block will flash in the upper left corner of the image, and the serial port will print out the relevant data of the QR code in real time.
 
+![](../../../../1_docs/3_figures/examples/ai/spilcd_phenomenon_mpy_qr_recongnition.png)

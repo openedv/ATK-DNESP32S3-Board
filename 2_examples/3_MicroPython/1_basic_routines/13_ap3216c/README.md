@@ -44,4 +44,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 After normal operation, the LCD displays the ALS+PS+IR data of the optical environment sensor.
 
-![]()
+![](../../../../1_docs/3_figures/examples/iic/ap3216c_spilcd_phenomenon_mpy.png)

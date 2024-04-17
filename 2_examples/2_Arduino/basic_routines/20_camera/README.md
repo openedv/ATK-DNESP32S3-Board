@@ -68,4 +68,4 @@ The place position of the camera module in the development board is shown as fol
 
 After normal operation, the LCD displays what the camera is shooting.
 
-![]()
+![](../../../../1_docs/3_figures/examples/camera/camera_phe.png)

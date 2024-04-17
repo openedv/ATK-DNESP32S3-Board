@@ -53,4 +53,4 @@ The place position of the dht11 in the development board is shown as follows:
 
 After normal operation, the LCD displays the temperature and humidity data collected by the DHT11 temperature and humidity sensor.
 
-![]()
+![](../../../../1_docs/3_figures/examples/one_wire/dht11_phe.png)

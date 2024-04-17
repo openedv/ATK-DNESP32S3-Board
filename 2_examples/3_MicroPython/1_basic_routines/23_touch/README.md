@@ -58,4 +58,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 Draw lines based on touch trajectory.
 
-![]()
+![](../../../../1_docs/3_figures/examples/rgb/spilcd_phenomenon_mpy_touch.png)

@@ -34,6 +34,6 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 #### 3.2 Phenomenon
 
+Display the internal temperature of the ESP32-S3.
 
-
-![]()
+![](../../../../1_docs/3_figures/examples/temperate/spilcd_phenomenon_mpy.png)

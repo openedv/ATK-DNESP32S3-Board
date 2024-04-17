@@ -39,6 +39,6 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 #### 3.2 Phenomenon
 
-After normal operation, the LCD displays the temperature and humidity data collected by the DHT11 temperature and humidity sensor.
+Read temperature and humidity data from the DHT11 sensor, then display it on an SPI LCD.
 
-![]()
+![](../../../../1_docs/3_figures/examples/one_wire/spilcd_phenomenon_mpy_dht11.png)

@@ -25,7 +25,6 @@ import atk_touch as touch
 import time
 
 
-# set screen orientation: 0 is vertical screen; 1 is landscape screen
 atk_dir = 1
 
 if atk_dir == 1:
@@ -168,21 +167,21 @@ def ctp_test():
 if __name__ == '__main__':
    
     x = 0
-    # set pin high on creation
-    led = Pin(1,Pin.OUT,value = 1)
+    # Set pin high on creation
+    led = Pin(1, Pin.OUT, value=1)
 
-    i2c0 = I2C(0, scl = Pin(42), sda = Pin(41), freq = 400000)
+    i2c0 = I2C(0, scl=Pin(42), sda=Pin(41), freq=400000)
     xl9555 = io_ex.init(i2c0)
     
-    display = ltdc.init(dir = atk_dir)
-    # # turn on the backlight
-    xl9555.write_bit(io_ex.LCD_BL,1)
+    display = ltdc.init(dir=atk_dir)
+    # Turn on the backlight
+    xl9555.write_bit(io_ex.LCD_BL, 1)
     time.sleep_ms(100)
     
-    # reset touch ic
-    xl9555.write_bit(io_ex.CT_RST,0)
+    # Reset touch IC
+    xl9555.write_bit(io_ex.CT_RST, 0)
     time.sleep_ms(10)
-    xl9555.write_bit(io_ex.CT_RST,1)
+    xl9555.write_bit(io_ex.CT_RST, 1)
     time.sleep_ms(10)
     
     touch.init()
@@ -191,5 +190,5 @@ if __name__ == '__main__':
     load_draw_dialog()
     
     while True:
-        # test
+        # Test
         ctp_test()

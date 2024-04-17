@@ -56,4 +56,4 @@ The position of the ap3216c in the development board is shown as follows:
 
 After normal operation, the LCD displays the ALS+PS+IR data of the optical environment sensor.
 
-![]()
+![](../../../../1_docs/3_figures/examples/iic/ap3216c_phe.png)

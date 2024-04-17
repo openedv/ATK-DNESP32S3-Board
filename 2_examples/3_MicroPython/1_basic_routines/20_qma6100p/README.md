@@ -42,6 +42,6 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 #### 3.2 Phenomenon
 
-After normal operation, the LCD displays the pitch and roll data of the three-axis acceleration sensor.
+Display three-axis data on SPI LCD.
 
-![]()
+![](../../../../1_docs/3_figures/examples/iic/ap3216c_spilcd_phenomenon_mpy.png)

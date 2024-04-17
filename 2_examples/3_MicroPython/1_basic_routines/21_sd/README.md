@@ -43,6 +43,6 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 #### 3.2 Phenomenon
 
-After normal operation, the LCD displays the information (capacity) of the SD card. You can test the SD card by pressing a button and view it through the serial port assistant.
+Perform read and write operations on files in the SD card, then display the read content on SPI LCD.
 
-![]()
+![](../../../../1_docs/3_figures/examples/sdcard/spilcd_phenomenon_mpy.png)

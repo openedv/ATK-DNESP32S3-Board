@@ -55,4 +55,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 RGBLCD screen refreshes with different colors.
 
-![]()
+![](../../../../1_docs/3_figures/examples/sdcard/spilcd_phenomenon_mpy.png)

@@ -33,3 +33,5 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 
 
+![](../../../../1_docs/3_figures/examples/iic/spilcd_phenomenon_mpy.png)
+

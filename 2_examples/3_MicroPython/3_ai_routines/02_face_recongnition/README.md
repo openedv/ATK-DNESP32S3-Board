@@ -63,3 +63,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 5.The flashing status of LED lights will reflect the real-time running status of the program.
 
+![](../../../../1_docs/3_figures/examples/ai/spilcd_phenomenon_mpy_face_recongnition.png)

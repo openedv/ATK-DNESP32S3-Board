@@ -41,4 +41,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 After normal operation, press the infrared remote control, the LCD will display the key value and the logo.
 
-![]()
+![](../../../../1_docs/3_figures/examples/remote/spilcd_phenomenon_mpy_rx.png)

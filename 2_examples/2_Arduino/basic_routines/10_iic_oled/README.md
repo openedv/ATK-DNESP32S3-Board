@@ -1,6 +1,12 @@
 ## iic_oled example
 
-Note: iic_oled example need to install "ESP8266 and ESP32 OLED driver for SSD1306 displays" LIBRARY.
+Note1: ALIENTEK's OLED Module module supports four types of interfaces, which can be configured via the BS1 and BS2 settings on the back of the module.The default setting for ALIENTEK's OLED Module is: BS1 and BS2 connected to VCC, which means it's using the 8080 parallel interface mode. 
+
+For this experiment, the interface mode of the OLED module needs to be changed to I2C. Therefore, you should connect BS2 to GND and connect D1 and D2 together.
+
+![](../../../../1_docs/3_figures/examples/oled/oled_iic_interface.png)
+
+Note2: iic_oled example need to install "ESP8266 and ESP32 OLED driver for SSD1306 displays" LIBRARY.
 
 ![](../../../../1_docs/3_figures/examples/oled/oled_lib.png)
 
@@ -54,4 +60,4 @@ The place position of the OLED module in the development board is shown as follo
 
 After normal operation, the oled module will display experimental demo.
 
-![]()
+<img src="../../../../1_docs/3_figures/examples/oled/oled_phe.png" style="zoom:33%;" />

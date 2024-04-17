@@ -52,4 +52,4 @@ The place position of the SPILCD in the development board is shown as follows:
 
 After normal operation, the spilcd module will display experimental demo.
 
-![]()
+![](../../../../1_docs/3_figures/examples/spilcd/spilcd_phe.png)

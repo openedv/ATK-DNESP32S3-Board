@@ -55,3 +55,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 Perform cat face detection on images.
 
+![](../../../../1_docs/3_figures/examples/ai/spilcd_phenomenon_mpy_cat_detection.png)

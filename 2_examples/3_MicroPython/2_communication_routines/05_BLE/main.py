@@ -93,7 +93,7 @@ class ESP32S3_BLE():
 """
 if __name__ == "__main__":
     
-    led = Pin(1, Pin.OUT,value = 1)
+    led = Pin(1, Pin.OUT,value=1)
     ble = ESP32S3_BLE("ESP32-S3 BLUE")
     
     while True:

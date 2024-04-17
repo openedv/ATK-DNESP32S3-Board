@@ -43,7 +43,7 @@ The hardware resources used in this experiment are:
 
 The position of the CAMERA in the development board is shown as follows:
 
-![](../../../../../../../../1，研发一部(MCU)/8，最新版本光盘目录结构/ESP32S3海外上市项目(新)/dnesp32s3-board/1_docs/3_figures/examples/face_detection_project/camera_sch.png)
+![](../../../../1_docs/3_figures/examples/face_detection_project/camera_sch.png)
 
 ### 3 Running
 
@@ -55,3 +55,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 Identifying the color of objects in an image.
 
+![](../../../../1_docs/3_figures/examples/ai/spilcd_phenomenon_mpy_color_recongnition.png)

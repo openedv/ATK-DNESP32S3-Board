@@ -28,7 +28,7 @@ The RNG is an internal peripheral, so there is no corresponding connection schem
 
 ### 3 Running
 
-#### 3.1 Compile & Download
+#### 3.1 Compilation and Download
 
 There are two ways to download code for ESP32S3.
 
@@ -38,8 +38,8 @@ There are two ways to download code for ESP32S3.
 
 **1 Compilation process**
 
-- Connect the USB UART to the computer using a USB cable
-- Using VS Code to open the  21_rng example
+- Connect the USB UART on the DNESP32S3 development board to your computer using a USB data cable
+- Open the '21_rng' example using VS Code
 - Select UART port number (Figure ①:ESP-IDF: Select Port to Use (COM, tty, usbserial))
 - Set Engineering Target Chip (Figure ②:ESP-IDF: Set Espressif Device Target)
 - Clearing project engineering（Figure ③:ESP IDF: Full Clean）
@@ -56,8 +56,8 @@ There are two ways to download code for ESP32S3.
 
 **1 Compilation process**
 
-- Connect the TATG(USB) to the computer using a USB cable
-- Using VS Code to open the 21_rng example
+- Connect the USB(JTAG) on the DNESP32S3 development board to your computer using a USB data cable
+- Open the '21_rng' example using VS Code
 - Select JTAG port number(Figure ①:ESP-IDF: Select Port to Use (COM, tty, usbserial))
 - Clearing project engineering(Figure ③:ESP IDF: Full Clean)
 - Select Flash Method(Figure ⑤:ESP-IDF: Select Flash Method)

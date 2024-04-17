@@ -23,9 +23,9 @@ import network
 import time
 
 
-SSID = "xxx"                    # wifi name
-PASSWORD = "xxx"                # wifi password
-Server_IP = '192.168.2.245'      # remote IP address
+SSID = "xxx"                    # WiFi name
+PASSWORD = "xxx"                # WiFi password
+Server_IP = '192.168.2.245'     # Remote IP address
 wlan = None
 
 """
@@ -36,20 +36,20 @@ wlan = None
 def connect():
     
     global wlan
-    # create site interface
+    # Create site interface
     wlan = network.WLAN(network.STA_IF)
     wlan.active(False)
-    # enable site interface
+    # Enable site interface
     wlan.active(True)
     
-    # determine whether to connect
+    # Determine whether to connect
     if not wlan.isconnected():
-        print('connecting to network...')
-        # connect wifi
+        print('Connecting to network...')
+        # Connect WiFi
         wlan.connect(SSID, PASSWORD)
         while not wlan.isconnected():
             pass
-    print('network config: ', wlan.ifconfig())
+    print('Network config:', wlan.ifconfig())
 
 """
  * @brief       The application entry point
@@ -58,30 +58,29 @@ def connect():
 """
 if __name__ == '__main__':
     
-    # connect to the network
+    # Connect to the network
     connect()
     
     while True:
-        # get local IP
+        # Get local IP
         ip = wlan.ifconfig()[0]
-        print('network config:', ip)
+        print('Network config:', ip)
 
-        udp_socket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-        # serverIP+ServerPort
+        udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        # Server IP + Server Port
         addr = socket.getaddrinfo('192.168.101.33', 8080)[0][-1]
         print(addr)
         # Sending messages
-        udp_socket.sendto("**********************************\r\n",addr)
-        udp_socket.sendto(f'ALIENTEK ESP32-S3 Board UDP Test\r\n'.encode('utf-8'),addr)
-        udp_socket.sendto("**********************************\r\n",addr)
+        udp_socket.sendto("**********************************\r\n", addr)
+        udp_socket.sendto(f'ALIENTEK ESP32-S3 Board UDP Test\r\n'.encode('utf-8'), addr)
+        udp_socket.sendto("**********************************\r\n", addr)
         
         while True:
             try:
-                # receive 4096 bytes each time
+                # Receive 4096 bytes each time
                 data = udp_socket.recv(4096)
             except :
                 udp_socket.close()
                 break
-            # echo
-            udp_socket.sendto(data,addr)
-
+            # Echo
+            udp_socket.sendto(data, addr)

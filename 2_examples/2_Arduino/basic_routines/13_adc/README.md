@@ -52,4 +52,4 @@ The position of the RV in the development board is shown as follows:
 
 After normal operation, adjust the rheostat to change the detection voltage.
 
-![]()
+![](../../../../1_docs/3_figures/examples/adc/adc_phe.png)

@@ -29,24 +29,37 @@ import time
  * @retval      None
 """
 if __name__ == '__main__':
-    
-    # set pin high on creation
-    led = Pin(1,Pin.OUT,value = 1)
+    # This block is executed if the script is run as the main program.
+
+    # Set pin 1 as an output pin and initialize it with a high value (1).
+    led = Pin(1, Pin.OUT, value=1)
+
+    # Sleep for 100 milliseconds.
     time.sleep_ms(100)
-    i2c0 = I2C(0, scl = Pin(42), sda = Pin(41), freq = 400000)
+
+    # Initialize I2C communication on bus 0 with SCL pin 42 and SDA pin 41, at a frequency of 400 kHz.
+    i2c0 = I2C(0, scl=Pin(42), sda=Pin(41), freq=400000)
+
+    # Initialize the XL9555 device using the I2C communication.
     xl9555 = io_ex.init(i2c0)
-    # enable the WDT with a timeout of 3s
+
+    # Enable the Watchdog Timer (WDT) with a timeout of 3 seconds.
     wdt = WDT(timeout=3000)
+
+    # Turn off the LED.
     led.value(0)
-    
+
     while True:
-        
-        # get key value
+        # This loop runs indefinitely.
+
+        # Get the value of the key from the XL9555 device.
         key = int(xl9555.key_scan())
-        
+
         if key == io_ex.KEY0:
-            # free dogs
+            # If the key is pressed, feed the watchdog to prevent it from timing out.
             wdt.feed()
 
-        time.sleep_ms(10)                       # sleep for 10 milliseconds
+        # Sleep for 10 milliseconds.
+        time.sleep_ms(10)
+
 

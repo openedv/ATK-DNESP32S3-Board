@@ -45,7 +45,7 @@ The hardware is consistent with the **sd example**, and will not be described in
 
 ### 4 Running
 
-#### 4.1 Compile & Download
+#### 4.1 Compilation and Download
 
 There are two ways to download code for ESP32S3.
 
@@ -55,8 +55,8 @@ There are two ways to download code for ESP32S3.
 
 **1 Compilation process**
 
-- Connect the USB UART to the computer using a USB cable
-- Using VS Code to open the 31_recoding example
+- Connect the USB UART on the DNESP32S3 development board to your computer using a USB data cable
+- Open the '31_recoding' example using VS Code
 - Select UART port number (Figure ①:ESP-IDF: Select Port to Use (COM, tty, usbserial))
 - Set Engineering Target Chip (Figure ②:ESP-IDF: Set Espressif Device Target)
 - Clearing project engineering(Figure ③:ESP IDF: Full Clean)
@@ -73,8 +73,8 @@ There are two ways to download code for ESP32S3.
 
 **1 Compilation process**
 
-- Connect the TATG(USB) to the computer using a USB cable
-- Using VS Code to open the 31_recoding example
+- Connect the USB(JTAG) on the DNESP32S3 development board to your computer using a USB data cable
+- Open the '31_recoding' example using VS Code
 - Select JTAG port number(Figure ①:ESP-IDF: Select Port to Use (COM, tty, usbserial))
 - Clearing project engineering(Figure ③:ESP IDF: Full Clean)
 - Select Flash Method(Figure ⑤:ESP-IDF: Select Flash Method)

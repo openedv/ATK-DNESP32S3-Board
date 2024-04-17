@@ -2,7 +2,7 @@
 
 ### 1 Brief
 
-Learn about the TCPServer protocol.
+Learning Bluetooth control.
 
 ### 2 Hardware Hookup
 
@@ -10,22 +10,7 @@ The hardware resources used in this experiment are:
 
 - LED - IO1
 
-- LCD - ALIENTEK 1.3 or 2.4 inch screen
-  - CS - IO21
-  - SCK - IO12
-  - SDA - IO11
-  - DC - IO40(jumper cap connection)
-  - PWR - XL9555_P13
-  - RST - XL9555_P12
-
-
-- XL9555
-  - IIC_SCL - IO42
-  - IIC_SDA - IO41
-  - IIC_INT - IO0(jumper cap connection)
-
-
-The WiFi is an internal peripheral, so there is no corresponding connection schematic diagram.
+The BLE is an internal peripheral, so there is no corresponding connection schematic diagram.
 
 ### 3 Running
 
@@ -35,39 +20,20 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 #### 3.2 Phenomenon
 
-Open the network debugging assistant, configure the connection protocol and network parameters. Once the network connection is successful, data transmission and reception can be achieved.
+1."Download a BLE debugging assistant from the app store on your phone.
 
-Note: Before connecting, the computer and the development board must be connected to the same WiFi hotspot.
+![](../../../../1_docs/3_figures/examples/ble/01_download_ble_app.png)
 
+2.Open the BLE debugging assistant, go to the Scanner interface, and refresh the screen (search for Bluetooth devices). Next, find the 'ESP32-S3 BLE' Bluetooth device, and click 'CONNECT' to connect to the device.
 
+![](../../../../1_docs/3_figures/examples/ble/02_connect_ble.png)
 
+3.After successful connection, click on the 'Unknown Characteristic' option under the 'Unknown Service' section to send data to the ESP32-S3 development board.
 
+![](../../../../1_docs/3_figures/examples/ble/03_unknown_service.png)
 
+4.Click on the upward arrow in the image above, select the data transmission mode and message content. If we send the message 'LED ON', the LED on the development board will light up. If we send the message 'LED OFF', the LED on the development board will turn off.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](../../../../1_docs/3_figures/examples/ble/04_send_data.png)
 
 

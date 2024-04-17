@@ -52,4 +52,4 @@ The RTC is an internal peripheral, so there is no corresponding connection schem
 
 After normal operation, the spilcd module will display time and date information.
 
-![]()
+![](../../../../1_docs/3_figures/examples/rtc/rtc_phe.png)

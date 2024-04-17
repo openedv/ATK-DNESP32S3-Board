@@ -42,4 +42,4 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 After normal operation, according to the program Settings to send infrared remote control data, infrared receiving head received data, the LCD will display the key value and identification.
 
-![]()
+![](../../../../1_docs/3_figures/examples/remote/spilcd_phenomenon_mpy_tx.png)

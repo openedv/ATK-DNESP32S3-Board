@@ -54,4 +54,4 @@ The position of the infrared transmitting tube in the development board is shown
 
 After normal operation, according to the program Settings to send infrared remote control data, infrared receiving head received data, the LCD will display the key value and identification.
 
-![]()
+![](../../../../1_docs/3_figures/examples/remote/infrared_transmission_phe.png)

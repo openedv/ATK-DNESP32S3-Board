@@ -23,8 +23,8 @@ import network
 import time
 
 
-SSID = "xxx"          # wifi name
-PASSWORD = "xxx"      # wifi password
+SSID = "xxx"          # WiFi name
+PASSWORD = "xxx"      # WiFi password
 wlan = None
 pos = 0
 
@@ -41,15 +41,15 @@ def connect():
     wlan.active(True)
     
     if not wlan.isconnected():
-        print('connecting to network...')
+        print('Connecting to network...')
         wlan.connect(SSID, PASSWORD)
         while not wlan.isconnected():
             pass
-    print('network config: ', wlan.ifconfig())
+    print('Network config: ', wlan.ifconfig())
 
 """
  * @brief       goto
- * @param       label:flag
+ * @param       label: flag
  * @retval      None
 """
 def goto(label):
@@ -64,19 +64,19 @@ def goto(label):
 """  
 if __name__ == '__main__':
     
-    # connect to the network
+    # Connect to the network
     connect()
     
     while True:
         
         while pos == 0:
-            # get local IP
+            # Get local IP
             ip = wlan.ifconfig()[0]
-            print('network config:', ip)
+            print('Network config:', ip)
 
             server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            server_socket.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,True)
-            server_socket.bind(('',8080))
+            server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, True)
+            server_socket.bind(('', 8080))
             server_socket.listen(128)
             try:
                 new_socket, client_ip_port = server_socket.accept()
@@ -92,18 +92,17 @@ if __name__ == '__main__':
             
             while True:
                 try:
-                    # receive 4096 bytes each time
+                    # Receive 4096 bytes each time
                     data = new_socket.recv(4096)
-                except :
+                except:
                     new_socket.close()
                     server_socket.close()
                     break
 
-                if (len(data) == 0):
-                
+                if len(data) == 0:
                     new_socket.close()
                     server_socket.close()
                     break
                 
-                # echo
+                # Echo
                 new_socket.send(data)

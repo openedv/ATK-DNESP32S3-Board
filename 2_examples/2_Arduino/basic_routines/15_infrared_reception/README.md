@@ -57,4 +57,4 @@ The position of the infrared receiving tube in the development board is shown as
 
 After normal operation, press the infrared remote control, the LCD will display the key value and the logo.
 
-![]()
+![](../../../../1_docs/3_figures/examples/remote/infrared_reception_phe.png)

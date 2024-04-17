@@ -39,6 +39,6 @@ If you need to download the code, please refer to the 3.3 Running Offline sectio
 
 #### 3.2 Phenomenon
 
-After normal operation, the LCD displays the temperature data collected by the DS18B20 temperature sensor.
+Read temperature data from the DS18B20 sensor and display it on an SPI LCD.
 
-![]()
+![](../../../../1_docs/3_figures/examples/one_wire/spilcd_phenomenon_mpy_ds18b20.png)

@@ -57,4 +57,4 @@ The position of the sdcard in the development board is shown as follows:
 
 After normal operation, the LCD displays the information (capacity) of the SD card. You can test the SD card by pressing a button and view it through the serial port assistant.
 
-![]()
+![](../../../../1_docs/3_figures/examples/sdcard/sdcard_phe.png)

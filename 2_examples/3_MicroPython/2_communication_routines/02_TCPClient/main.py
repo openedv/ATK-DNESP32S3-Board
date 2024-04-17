@@ -23,9 +23,9 @@ import network
 import time
 
 
-SSID = "xxx"                    # wifi name
-PASSWORD = "xxx"                # wifi password
-Server_IP = '192.168.101.33'    # remote IP address
+SSID = "xxx"                    # WiFi name
+PASSWORD = "xxx"                # WiFi password
+Server_IP = '192.168.101.33'    # Remote IP address
 wlan = None
 pos = 0
 
@@ -42,15 +42,15 @@ def connect():
     wlan.active(True)
     
     if not wlan.isconnected():
-        print('connecting to network...')
+        print('Connecting to network...')
         wlan.connect(SSID, PASSWORD)
         while not wlan.isconnected():
             pass
-    print('network config: ', wlan.ifconfig())
+    print('Network config: ', wlan.ifconfig())
 
 """
  * @brief       goto
- * @param       label:flag
+ * @param       label: flag
  * @retval      None
 """
 def goto(label):
@@ -65,26 +65,26 @@ def goto(label):
 """  
 if __name__ == '__main__':
     
-    # connect to the network
+    # Connect to the network
     connect()
     
     while True:
         
         while pos == 0:
-            # get local IP
+            # Get local IP
             ip = wlan.ifconfig()[0]
             
-            client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-            print('network config:', ip)
+            client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            print('Network config:', ip)
             
             try:
-                client_socket.connect((Server_IP,8080))
-            except BaseExc1eption:
+                client_socket.connect((Server_IP, 8080))
+            except BaseException:
                 client_socket.close()
                 goto(0)
                 break
             
-            print('Connection established successfully......')
+            print('Connection established successfully...')
 
             client_socket.send("**********************************\r\n")
             client_socket.send(f'ALIENTEK ESP32-S3 Board TCPClient\r\n'.encode('utf-8'))
@@ -92,17 +92,16 @@ if __name__ == '__main__':
             
             while True:
                 try:
-                    # receive 4096 bytes each time
+                    # Receive 4096 bytes each time
                     data = client_socket.recv(4096)
-                except BaseExc1eption:
+                except BaseException:
                     client_socket.close()
                     break
   
-                if (len(data) == 0):
-                
-                    print("close socket")
+                if len(data) == 0:
+                    print("Close socket")
                     client_socket.close()
                     break
 
-                # echo
+                # Echo
                 client_socket.send(data)
