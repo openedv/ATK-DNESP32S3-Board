@@ -71,5 +71,3 @@ There are two ways to download code for ESP32S3.
 2. Task1 and Task2 refresh the LCD area and display the running times of the task respectively on the LCD
 3. When KEY0 is pressed, task 1 is suspended. When KEY1 is pressed, Task 1 resumes. After a task is suspended, the area corresponding to the suspended task on the LCD is not refreshed.
 4. The LED blinks, indicating that the system is running.
-
-![]()

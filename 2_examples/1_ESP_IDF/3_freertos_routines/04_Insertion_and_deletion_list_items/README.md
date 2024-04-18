@@ -70,5 +70,3 @@ There are two ways to download code for ESP32S3.
 1. The spilcd module will display experimental message.
 2. Press the KEY0 key, step by step to initialize the list and list items, print the address of the list and other list items, add list items to the list,remove the list item and print the corresponding information through the serial port.
 3. The LED blinks, indicating that the system is running.
-
-![]()

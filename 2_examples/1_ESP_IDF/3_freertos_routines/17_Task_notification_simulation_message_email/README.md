@@ -69,5 +69,3 @@ There are two ways to download code for ESP32S3.
 
 1. The spilcd module will display experimental message.
 2. When KEY0 is pressed, the LCD area is filled and refreshed. LED0 blinks when KEY1 is pressed.
-
-![]()

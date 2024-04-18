@@ -71,5 +71,3 @@ There are two ways to download code for ESP32S3.
 2. When the key is pressed, a message is correspondingly sent to the queue and a binary semaphore is released.
 3. Task2 obtains members from the queue set, and according to the different members, receives messages from the queue with a binary semaphore, and sends the results display serial port.
 4. The LED blinks, indicating that the system is running.
-
-![]()

@@ -71,5 +71,3 @@ There are two ways to download code for ESP32S3.
 2. When a key is pressed, the key value is sent as a message to the message queue.
 3. Task2 Receives a message. The received message is a key value. When the KEY0 is pressed, the LCD area is refreshed.
 4. The LED blinks, indicating that the system is running.
-
-![]()

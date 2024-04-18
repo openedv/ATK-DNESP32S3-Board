@@ -71,4 +71,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, Press the BOOT button to obtain a 32-bit random number once and display it on the LCD.
 
-![]()
+![](../../../../1_docs/3_figures/examples/rng/spilcd_phenomenon_idf.png)

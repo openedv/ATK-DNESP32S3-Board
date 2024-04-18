@@ -76,4 +76,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, press the infrared remote control, the LCD will display the key value and the logo.
 
-![]()
+![](../../../../1_docs/3_figures/examples/remote/spilcd_phenomenon_idf_rx.png)

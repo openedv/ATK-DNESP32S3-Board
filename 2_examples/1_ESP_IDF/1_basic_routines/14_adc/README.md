@@ -75,4 +75,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, adjust the rheostat to change the detection voltage.
 
-![]()
+![](../../../../1_docs/3_figures/examples/adc/spilcd_phenomenon_idf.png)

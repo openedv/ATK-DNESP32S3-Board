@@ -70,5 +70,3 @@ There are two ways to download code for ESP32S3.
 1. The spilcd module will display experimental message.
 2. When the key is pressed, the corresponding event is sent.
 3. Task2 and Task3 receive events. When all the events to be received occur, the current event value is displayed on the LCD and the events are cleared.
-
-![]()

@@ -90,4 +90,4 @@ There are two ways to download code for ESP32S3.
 
 RGBLCD screen refreshes with different colors.
 
-![]()
+![](../../../../1_docs/3_figures/examples/rgb/spilcd_phenomenon_mpy.png)

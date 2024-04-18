@@ -76,4 +76,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, the LCD displays the temperature and humidity data collected by the DHT11 temperature and humidity sensor.
 
-![]()
+![](../../../../1_docs/3_figures/examples/one_wire/spilcd_phenomenon_idf_dht11.png)

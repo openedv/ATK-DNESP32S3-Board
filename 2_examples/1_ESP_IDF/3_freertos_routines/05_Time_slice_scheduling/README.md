@@ -69,5 +69,3 @@ There are two ways to download code for ESP32S3.
 
 1. The spilcd module will display experimental message.
 2. The serial port continuously displays the execution times of Task1 and Task2.
-
-![]()

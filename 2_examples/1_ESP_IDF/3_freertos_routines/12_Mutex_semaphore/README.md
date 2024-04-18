@@ -69,5 +69,3 @@ There are two ways to download code for ESP32S3.
 
 1. The spilcd module will display experimental message.
 2. Serial print program execution flow, showing the mutual exclusion semaphore to solve the priority flipping problem.
-
-![]()

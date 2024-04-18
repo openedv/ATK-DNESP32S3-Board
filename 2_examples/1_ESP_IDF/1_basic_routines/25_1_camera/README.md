@@ -91,4 +91,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, the LCD displays what the camera is shooting.
 
-![]()
+![](../../../../1_docs/3_figures/examples/camera/spilcd_phenomenon_mpy.png)

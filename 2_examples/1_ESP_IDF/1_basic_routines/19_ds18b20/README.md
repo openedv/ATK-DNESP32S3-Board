@@ -76,4 +76,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, the LCD displays the temperature data collected by the DS18B20 temperature sensor.
 
-![]()
+![](../../../../1_docs/3_figures/examples/one_wire/spilcd_phenomenon_idf_ds18b20.png)

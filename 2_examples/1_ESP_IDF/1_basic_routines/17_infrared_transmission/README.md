@@ -77,4 +77,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, according to the program Settings to send infrared remote control data, infrared receiving head received data, the LCD will display the key value and identification.
 
-![]()
+![](../../../../1_docs/3_figures/examples/remote/spilcd_phenomenon_idf_tx.png)

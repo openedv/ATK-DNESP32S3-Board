@@ -87,4 +87,4 @@ There are two ways to download code for ESP32S3.
 
 Press the BOOT button to take photos.
 
-![]()
+![](../../../../1_docs/3_figures/examples/camera/spilcd_phenomenon_mpy.png)

@@ -80,4 +80,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, the LCD displays the information (capacity) of the SD card. 
 
-![]()
+![](../../../../1_docs/3_figures/examples/sdcard/spilcd_phenomenon_idf.png)

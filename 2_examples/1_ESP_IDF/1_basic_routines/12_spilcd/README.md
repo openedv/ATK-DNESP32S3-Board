@@ -73,6 +73,6 @@ There are two ways to download code for ESP32S3.
 
 #### 3.2 Phenomenon
 
-After normal operation, the spilcd module will display experimental demo.
+The SPILCD screen refreshes colors.
 
-![]()
+![](../../../../1_docs/3_figures/examples/spilcd/spilcd_phenomenon_idf.png)

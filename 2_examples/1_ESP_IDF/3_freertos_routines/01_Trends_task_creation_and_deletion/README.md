@@ -71,5 +71,3 @@ There are two ways to download code for ESP32S3.
 2. Task1 and Task2 refresh the LCD area and display the running times of the task respectively on the LCD
 3. When KEY0 is pressed, task1 is deleted. When KEY1 is pressed, task2 is deleted.After a task is deleted, the area corresponding to the deleted task is not refreshed on the LCD.
 4. The LED blinks, indicating that the system is running.
-
-![]()

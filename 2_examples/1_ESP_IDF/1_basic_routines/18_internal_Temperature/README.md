@@ -69,6 +69,6 @@ There are two ways to download code for ESP32S3.
 
 #### 3.2 Phenomenon
 
+Display the internal temperature of the ESP32-S3.
 
-
-![]()
+![](../../../../1_docs/3_figures/examples/temperate/spilcd_phenomenon_idf.png)

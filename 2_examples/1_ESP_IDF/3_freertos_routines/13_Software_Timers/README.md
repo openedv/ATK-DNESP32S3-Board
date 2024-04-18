@@ -70,5 +70,3 @@ There are two ways to download code for ESP32S3.
 1. The spilcd module will display experimental message.
 2. When KEY0 is pressed, timer1 and timer2 are enabled. Timer1 is a periodic timer, and timer2 is a single timer. Stop timer1 and timer2 when the KEY1 is pressed.
 3. When timer1 times out, refresh the LCD area display and display the timer timeout times. When timer2 times out, refresh the LCD area display and display the timer timeout times.
-
-![]()

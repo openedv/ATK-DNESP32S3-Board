@@ -71,5 +71,3 @@ There are two ways to download code for ESP32S3.
 2. When the KEY0 is pressed, the counting semaphore is released.
 3. Task2 obtain the counting semaphore. When the counting semaphore is obtained, it is displayed on the LCD every 1000 system beats count the number of semaphore resources and refresh the LCD area display.
 4. The LED blinks, indicating that the system is running.
-
-![]()

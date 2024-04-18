@@ -79,4 +79,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, the LCD displays the ALS+PS+IR data of the optical environment sensor.
 
-![]()
+![](../../../../1_docs/3_figures/examples/adc/spilcd_phenomenon_idf.png)

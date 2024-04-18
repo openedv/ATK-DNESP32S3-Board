@@ -71,5 +71,3 @@ There are two ways to download code for ESP32S3.
 2. When the KEY0 is pressed, a binary semaphore is released.
 3. Task2 obtain a binary semaphore. If the binary semaphore is obtained, refresh the LCD.
 4. The LED blinks, indicating that the system is running.
-
-![]()

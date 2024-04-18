@@ -79,4 +79,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, the LCD displays the pitch and roll data of the three-axis acceleration sensor.
 
-![]()
+![](../../../../1_docs/3_figures/examples/iic/spilcd_phenomenon_idf_qma6100p.png)

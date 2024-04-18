@@ -70,5 +70,3 @@ There are two ways to download code for ESP32S3.
 1. The spilcd module will display experimental message.
 2. When the KEY0 key is pressed, the task notification value is sent incrementally.
 3. Task2 receives the task notification value and decreases the task notification value by one. When the task notification value is greater than 0, the system displays the task notification value on the LCD every 1000 system beats and refreshes the LCD display.
-
-![]()

@@ -71,4 +71,4 @@ There are two ways to download code for ESP32S3.
 
 After normal operation, the spilcd module will display time and date information.
 
-![]()
+![](../../../../1_docs/3_figures/examples/rtc/spilcd_phenomenon_idf.png)
