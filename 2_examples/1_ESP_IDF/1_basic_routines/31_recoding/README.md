@@ -88,4 +88,4 @@ There are two ways to download code for ESP32S3.
 
 The KEY0 button is used to start or pause the recording function, the KEY2 button is used to save the recording and stop the current recording operation, and the KEY3 button is used to play back the most recent recording. 
 
-![]()
+![](../../../../1_docs/3_figures/examples/recoding/spilcd_phenomenon_idf.png)

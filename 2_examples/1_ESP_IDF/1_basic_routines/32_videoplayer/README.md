@@ -90,4 +90,4 @@ There are two ways to download code for ESP32S3.
 
 The KEY0 button is used to select and play the next video, while the KEY2 button is used to select and play the previous video. Additionally, the KEY_UP button is used to implement fast-forward functionality for the video, while the KEY1 button is used to implement rewind functionality for the video. 
 
-![]()
+![](../../../../1_docs/3_figures/examples/videoplayr/spilcd_phenomenon_idf.png)

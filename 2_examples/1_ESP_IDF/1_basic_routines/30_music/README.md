@@ -90,4 +90,4 @@ There are two ways to download code for ESP32S3.
 
 Press KEY2 to switch to the previous music, press KEY0 to switch to the next music, and the function of KEY3 is to pause the current music playback.. 
 
-![]()
+![](../../../../1_docs/3_figures/examples/music/spilcd_phenomenon_idf.png)

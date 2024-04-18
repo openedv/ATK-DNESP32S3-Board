@@ -118,5 +118,5 @@ There are two ways to download code for ESP32S3.
 
 After system reset, it will automatically enter the main interface. At this point, users can select the desired APP by pressing the KEY0 and KEY2 buttons. Meanwhile, the KEY3 and KEY1 buttons are used to control the entry and exit operations of the APP. This design enables users to easily manage and switch between different applications.
 
-![]()
+![](../../../../1_docs/3_figures/examples/bootload/spilcd_phenomenon_idf.png)
 

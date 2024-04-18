@@ -57,4 +57,4 @@ There are two ways to download code for ESP32S3.
 
 Performing read and write operations on partition tables.
 
-![]()
+![](../../../../1_docs/3_figures/examples/spiffs/spilcd_phenomenon_idf.png)

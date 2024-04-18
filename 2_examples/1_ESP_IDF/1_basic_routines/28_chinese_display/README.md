@@ -73,4 +73,4 @@ There are two ways to download code for ESP32S3.
 
 load chinese character library in partition table and display chinese characters on LCD.
 
-![]()
+![](../../../../1_docs/3_figures/examples/chinese_display/spilcd_phenomenon_idf.png)

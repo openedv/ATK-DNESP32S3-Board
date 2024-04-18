@@ -79,5 +79,3 @@ There are two ways to download code for ESP32S3.
 #### 3.2 Phenomenon
 
 After the program runs, it will simulate a virtual serial port. After connecting to the PC via a data cable, data communication can be performed using a serial debugging assistant on the PC side. The development board side will utilize the USB virtual serial port to send and receive data in real-time, achieving efficient data interaction with the PC side.
-
-![]()

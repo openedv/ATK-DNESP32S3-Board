@@ -90,4 +90,4 @@ There are two ways to download code for ESP32S3.
 
 When no button is pressed, the system will automatically play the image. To switch between images, press KEY2 to browse the previous one, and press KEY0 to browse the next one. 
 
-![]()
+![](../../../../1_docs/3_figures/examples/pitcures/spilcd_phenomenon_idf.png)

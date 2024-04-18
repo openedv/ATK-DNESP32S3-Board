@@ -82,5 +82,5 @@ There are two ways to download code for ESP32S3.
 
 The system virtualizes the **Micro SD Card** as a USB drive, which can be seen as a disk on the computer.
 
-![]()
+![](../../../../1_docs/3_figures/examples/usb_sd/spilcd_phenomenon_idf.png)
 
